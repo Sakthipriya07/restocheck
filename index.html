@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Resto Website</title>
+  
+  <link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css" />
+
+  <!-- Font Awesome CDN for icons -->
+  <link
+    rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css"
+  />
+
+  <!-- CSS File Link -->
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<!-- Navbar -->
+<header>
+  <a href="#" class="logo">
+    <i class="fas fa-utensils"></i> resto
+  </a>
+
+  <nav class="navbar">
+    <a class="active" href="#home">home</a>
+    <a href="#dishes">dishes</a>
+    <a href="#about">about</a>
+    <a href="#menu">menu</a>
+    <a href="#review">review</a>
+    <a href="#order">order</a>
+  </nav>
+
+  <div class="icons">
+    <i class="fas fa-bars" id="menu-bars"></i>
+    <i class="fas fa-search" id="search-icon"></i>
+    <a href="#" class="fas fa-heart"></a>
+    <a href="#" class="fas fa-shopping-cart"></a>
+  </div>
+</header>
+
+<!-- Search -->
+<form action="" id="search-form">
+  <input type="search" id="search-box" placeholder="Search here..." />
+  <label for="search-box" class="fas fa-search"></label>
+  <i class="fas fa-times" id="close"></i>
+</form>
+  
+<!-- Home Section -->
+<section class="home" id="home">
+  <div class="home-slider swiper">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide slide">
+        <div class="content">
+          <span>our special dish</span>
+          <h3>spicy noodles</h3>
+          <p>   </p>
+          <a href="#" class="btn">order now</a>
+        </div>
+        <div class="image">
+          <img src="foods/spicynoodles.png" w="800" alt="Spicy Noodles">
+        </div>
+      </div>
+
+      <div class="swiper-slide slide">
+        <div class="content">
+          <span>our special dish</span>
+          <h3>hot pizza</h3>
+          <p>  </p>
+          <a href="#" class="btn">order now</a>
+        </div>
+        <div class="image">
+          <img src="foods/hotpizza.png" w="800" alt="Hot Pizza">
+        </div>
+      </div>
+
+      <div class="swiper-slide slide">
+        <div class="content">
+          <span>our special dish</span>
+          <h3>burger combo</h3>
+          <p>   </p>
+          <a href="#" class="btn">order now</a>
+        </div>
+        <div class="image">
+          <img src="foods/friedchicken.png" w="800" alt="Burger Combo">
+        </div>
+      </div>
+
+    </div>
+    <div class="swiper-pagination"></div>
+  </div>
+</section>
+
+<!-- Dishes Section -->
+<section class="dishes" id="dishes">
+  <h3 class="sub-heading"> our dishes </h3>
+  <h1 class="heading"> popular dishes </h1>
+
+  <div class="box-container">
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="asserts/pasta.jpg" w="600" alt="Pasta Dish">
+      <h3>creamy pasta</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>₹110</span>
+      <a href="#" class="btn">add to cart</a>
+    </div>
+
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="foods/sandwich.jpg" w="600" alt="Tasty Sandwich">
+      <h3>tasty sandwich</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>₹120</span>
+      <a href="#" class="btn">add to cart</a>
+    </div>
+
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="foods/sushi.jpg" w="600" alt="Sushi Plate">
+      <h3>sushi plate</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>₹180</span>
+      <a href="#" class="btn">add to cart</a>
+    </div>
+
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="foods/chickenfry.jpg" w="600" alt="Grilled Chicken">
+      <h3>chicken fry</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>₹150</span>
+      <a href="#" class="btn">add to cart</a>
+    </div>
+    
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="foods/chickenbiryani.jpg" w="600" alt="Grilled Chicken">
+      <h3>chicken biryani</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>₹150</span>
+      <a href="#" class="btn">add to cart</a>
+    </div>
+    
+    <div class="box">
+      <a href="#" class="fas fa-heart"></a>
+      <a href="#" class="fas fa-eye"></a>
+      <img src="foods/muttonbiryani.jpg" w="600" alt="Grilled Chicken">
+      <h3>mutton biryani</h3>
+      <div class="stars">
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star"></i><i class="fas fa-star"></i>
+        <i class="fas fa-star-half-alt"></i>
+      </div>
+      <span>₹250</span>
+      <a href="#" class="btn">add to cart</a>
+    </div>
+    
+    
+  </div>
+</section>
+
+<!-- ABOUT SECTION -->
+<section class="about" id="about">
+  <h2 class="sub-heading">about</h2>
+  <h1 class="heading">why choose us?</h1>
+
+  <div class="row">
+    <div class="image">
+      <img src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?w=800" alt="About Image" />
+    </div>
+
+    <div class="content">
+      <h3>best food in the country</h3>
+      <p>We provide delicious, freshly prepared dishes made from the best ingredients, delivered straight to your door.</p>
+      <p>Experience top-quality taste and quick service at affordable prices.</p>
+
+      <div class="icons-container">
+        <div class="icons"><i class="fas fa-shipping-fast"></i><span>Free delivery</span></div>
+        <div class="icons"><i class="fas fa-dollar-sign"></i><span>Easy payments</span></div>
+        <div class="icons"><i class="fas fa-headset"></i><span>24/7 service</span></div>
+      </div>
+
+      <a href="#" class="btn">Learn more</a>
+    </div>
+  </div>
+</section>
+
+<!-- Menu Section -->
+<section class="menu" id="menu">
+  <h3 class="sub-heading"> our menu </h3>
+  <h1 class="heading"> today's specialty </h1>
+
+  <div class="box-container">
+
+    <div class="box">
+      <div class="image">
+        <img src="foods/pizza.jpg" w="600" alt="Pizza">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>cheese burst pizza</h3>
+        <p>Hot and cheesy pizza with fresh toppings and herbs.</p>
+        <a href="#" class="btn">add to cart</a>
+        <span class="price">₹100</span>
+      </div>
+    </div>
+
+    <div class="box">
+      <div class="image">
+        <img src="foods/pancake.jpg" w="600" alt="Pancakes">
+        <a href="#" class="fas fa-heart"></a> 
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>sweet pancakes</h3>
+        <p>Fluffy pancakes served with honey and fresh berries.</p>
+        <a href="#" class="btn">add to cart</a>
+        <span class="price">₹90</span>
+      </div>
+    </div>
+    
+     <div class="box">
+      <div class="image">
+        <img src="foods/tacos.jpg"  w="600" alt="Pizza">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>mexican tacos</h3>
+        <p>Hot and cheesy pizza with fresh toppings and herbs.</p>
+        <a href="#" class="btn">add to cart</a>
+        <span class="price">₹140</span>
+      </div>
+    </div>
+    
+    
+     <div class="box">
+      <div class="image">
+        <img src="foods/burger.jpg"  w="600" alt="Pizza">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>deluxe burger</h3>
+        <p>Hot and cheesy pizza with fresh toppings and herbs.</p>
+        <a href="#" class="btn">add to cart</a>
+        <span class="price">₹80</span>
+      </div>
+    </div>
+
+    
+     <div class="box">
+      <div class="image">
+        <img src="foods/prawnfry.jpg"  w="600" alt="Pizza">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>prawn fry</h3>
+        <p>Hot and cheesy pizza with fresh toppings and herbs.</p>
+        <a href="#" class="btn">add to cart</a>
+        <span class="price">₹170</span>
+      </div>
+    </div>
+    
+    
+     <div class="box">
+      <div class="image">
+        <img src="foods/vegsalad.jpg"  w="600" alt="Pizza">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>fresh veg salad</h3>
+        <p>Hot and cheesy pizza with fresh toppings and herbs.</p>
+        <a href="#" class="btn">add to cart</a>
+        <span class="price">₹70</span>
+      </div>
+    </div>
+    
+    
+    <div class="box">
+      <div class="image">
+        <img src="foods/icecream.jpg"  w="600" alt="Pizza">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>ice cream bowl</h3>
+        <p>Hot and cheesy pizza with fresh toppings and herbs.</p>
+        <a href="#" class="btn">add to cart</a>
+        <span class="price">₹70</span>
+      </div>
+    </div>
+    
+    <div class="box">
+      <div class="image">
+        <img src="foods/drinks.jpg"  w="600" alt="Pizza">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>drinks</h3>
+        <p>Hot and cheesy pizza with fresh toppings and herbs.</p>
+        <a href="#" class="btn">add to cart</a>
+        <span class="price">₹70</span>
+      </div>
+    </div>
+      <div class="box">
+      <div class="image">
+        <img src="foods/paneerbuttermasala.jpg"  w="600" alt="Pizza">
+        <a href="#" class="fas fa-heart"></a>
+      </div>
+      <div class="content">
+        <div class="stars">
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star"></i><i class="fas fa-star"></i>
+          <i class="fas fa-star-half-alt"></i>
+        </div>
+        <h3>paneer butter masala</h3>
+        <p>Hot and cheesy pizza with fresh toppings and herbs.</p>
+        <a href="#" class="btn">add to cart</a>
+        <span class="price">₹100</span>
+      </div>
+    </div>
+    
+    
+    
+    
+  </div>
+</section>
+
+<!-- Review Section -->
+<section class="review" id="review">
+  <h3 class="sub-heading"> customer's review </h3>
+  <h1 class="heading"> what they say </h1>
+
+  <div class="swiper review-slider">
+    <div class="swiper-wrapper">
+
+      <div class="swiper-slide slide">
+        <i class="fas fa-quote-right"></i>
+        <div class="user">
+          <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="John Deo">
+        </div>
+        <div class="usercontent">
+          <h3>John Deo</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <p>Excellent food and fast service! Highly recommended.</p>
+      </div>
+
+      <div class="swiper-slide slide">
+        <i class="fas fa-quote-right"></i>
+        <div class="user">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Jane Smith">
+        </div>
+        <div class="usercontent">
+          <h3>Jane Smith</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <p>Love the flavors and presentation. My go-to restaurant!</p>
+      </div>
+      
+      <div class="swiper-slide slide">
+        <i class="fas fa-quote-right"></i>
+        <div class="user">
+          <img src="https://randomuser.me/api/portraits/women/45.jpg" alt="Jane Smith">
+        </div>
+        <div class="usercontent">
+          <h3>Jane Smith</h3>
+          <div class="stars">
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star"></i><i class="fas fa-star"></i>
+            <i class="fas fa-star-half-alt"></i>
+          </div>
+        </div>
+        <p>Love the flavors and presentation. My go-to restaurant!</p>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- Order Section -->
+<section class="order" id="order">
+  <h3 class="sub-heading">order now</h3>
+  <h1 class="heading">free and fast</h1>
+
+  <form action="">
+    <div class="inputBox">
+      <div class="input">
+        <span>your name</span>
+        <input type="text" placeholder="enter your name">
+      </div>
+      <div class="input">
+        <span>your number</span>
+        <input type="number" placeholder="enter your number">
+      </div>
+    </div>
+
+    <div class="inputBox">
+      <div class="input">
+        <span>enter food name</span>
+        <input type="text" placeholder="enter food name">
+      </div>
+      <div class="input">
+        <span>additional food</span>
+        <input type="text" placeholder="extra with food">
+      </div>
+    </div>
+
+    <div class="inputBox">
+      <div class="input">
+        <span>how many</span>
+        <input type="number" placeholder="how many orders">
+      </div>
+      <div class="input">
+        <span>date and time</span>
+        <input type="datetime-local">
+      </div>
+    </div>
+
+    <div class="inputBox">
+      <div class="input">
+        <span>your address</span>
+        <textarea placeholder="enter your address" cols="30" rows="10"></textarea>
+      </div>
+      <div class="input">
+        <span>your message</span>
+        <textarea placeholder="enter your message" cols="30" rows="10"></textarea>
+      </div>
+    </div>
+
+    <input type="submit" value="order now" class="btn">
+  </form>
+</section>
+
+<!-- Footer -->
+<section class="footer">
+  <div class="box-container">
+    <div class="box">
+      <h3>locations</h3>
+      <a href="#">Chennai</a>
+      <a href="#">Mumbai</a>
+      <a href="#">Karnataka</a>
+      <a href="#">Hydrabed</a>
+      <a href="#">Delhi</a>
+    </div>
+    <div class="box">
+      <h3>quick links</h3>
+      <a href="#">home</a>
+      <a href="#">dishes</a>
+      <a href="#">about</a>
+      <a href="#">menu</a>
+      <a href="#">review</a>
+      <a href="#">order</a>
+    </div>
+    <div class="box">
+      <h3>contact info</h3>
+      <a href="#">+123-456-7890</a>
+      <a href="#">resto@gmail.com</a>
+      <a href="#">chennai, India</a>
+    </div>
+    <div class="box">
+      <h3>follow us</h3>
+      <a href="#">facebook</a>
+      <a href="#">twitter</a>
+      <a href="#">instagram</a>
+      <a href="#">linkedin</a>
+    </div>
+  </div>
+
+  <div class="credit">
+    copyright @ 2025 by <span> resto </span>
+  </div>
+</section>
+
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+<script src="script.js"></script>
+</body>
+  </html>
